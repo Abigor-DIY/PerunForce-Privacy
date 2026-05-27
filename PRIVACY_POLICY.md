@@ -199,6 +199,9 @@ You can:
 - decline AI features
 - delete your account and associated data from inside the app
 
+Public account and data deletion instructions are available at:
+`https://abigor-diy.github.io/PerunForce-Privacy/account-deletion/`
+
 If cloud deletion fails, the app may offer local-only device cleanup and will clearly inform you that cloud data may still remain until remote deletion succeeds.
 
 ## 11. Children
