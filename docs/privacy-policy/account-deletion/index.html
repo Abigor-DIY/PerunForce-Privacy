@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>PerunForce Account &amp; Data Deletion</title>
+    <meta
+      name="description"
+      content="Instructions for deleting a PerunForce account and associated data."
+    />
+    <style>
+      :root {
+        --bg: #0d1117;
+        --panel: #161b22;
+        --text: #e6edf3;
+        --muted: #9da7b3;
+        --accent: #d4a017;
+        --border: #30363d;
+        --max: 860px;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: Georgia, "Times New Roman", serif;
+        background: linear-gradient(180deg, #0b1020 0%, var(--bg) 100%);
+        color: var(--text);
+        line-height: 1.65;
+      }
+
+      .wrap {
+        max-width: var(--max);
+        margin: 0 auto;
+        padding: 32px 20px 56px;
+      }
+
+      .card {
+        background: rgba(22, 27, 34, 0.94);
+        border: 1px solid var(--border);
+        border-radius: 18px;
+        padding: 28px 24px;
+        box-shadow: 0 20px 60px rgba(0, 0, 0, 0.32);
+      }
+
+      h1,
+      h2 {
+        line-height: 1.2;
+      }
+
+      h1 {
+        font-size: 2rem;
+        margin: 0 0 8px;
+      }
+
+      h2 {
+        font-size: 1.25rem;
+        margin-top: 28px;
+        padding-top: 18px;
+        border-top: 1px solid var(--border);
+      }
+
+      p,
+      li {
+        color: var(--text);
+      }
+
+      .muted {
+        color: var(--muted);
+      }
+
+      .meta {
+        display: grid;
+        gap: 6px;
+        margin: 16px 0 24px;
+        color: var(--muted);
+      }
+
+      code {
+        font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+        color: var(--accent);
+      }
+
+      a {
+        color: var(--accent);
+      }
+
+      ol,
+      ul {
+        padding-left: 22px;
+      }
+
+      .notice {
+        border-left: 4px solid var(--accent);
+        padding: 12px 14px;
+        background: rgba(212, 160, 23, 0.08);
+        margin: 18px 0;
+      }
+
+      .footer {
+        margin-top: 28px;
+        color: var(--muted);
+        font-size: 0.95rem;
+      }
+
+      @media (max-width: 640px) {
+        .wrap {
+          padding: 18px 12px 32px;
+        }
+
+        .card {
+          padding: 20px 16px;
+          border-radius: 14px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="wrap">
+      <article class="card">
+        <h1>Account &amp; Data Deletion — PerunForce</h1>
+        <p class="muted">
+          Public instructions for deleting a PerunForce account and associated
+          app data.
+        </p>
+
+        <section class="meta">
+          <div><strong>Last updated:</strong> May 27, 2026</div>
+          <div><strong>App:</strong> PerunForce</div>
+          <div><strong>Package:</strong> <code>com.perunforce.perun_force</code></div>
+          <div><strong>Contact:</strong> <a href="mailto:abigor82@gmail.com">abigor82@gmail.com</a></div>
+        </section>
+
+        <h2>Delete from inside the app</h2>
+        <ol>
+          <li>Open PerunForce.</li>
+          <li>Open Profile or Settings.</li>
+          <li>Open the data management section.</li>
+          <li>Select <strong>Delete account &amp; all data</strong>.</li>
+          <li>Confirm the deletion in the confirmation dialog.</li>
+        </ol>
+
+        <p>
+          The in-app deletion flow is intended to delete local app data and, if
+          you are signed in, request deletion of synchronized cloud data
+          associated with your account.
+        </p>
+
+        <h2>If cloud deletion fails</h2>
+        <p>
+          If the app cannot confirm server-side deletion, it may offer local-only
+          cleanup. In that case, local data on the current device is cleared, but
+          cloud data may remain until remote deletion succeeds.
+        </p>
+
+        <h2>Request deletion by email</h2>
+        <p>
+          If you cannot access the app or the in-app deletion flow does not
+          complete, email
+          <a href="mailto:abigor82@gmail.com">abigor82@gmail.com</a>
+          with the subject <strong>PerunForce account deletion request</strong>.
+        </p>
+        <p>
+          Include the Google account email address used to sign in to
+          PerunForce. Do not include passwords or sensitive health details in the
+          email.
+        </p>
+
+        <h2>Data covered by deletion</h2>
+        <ul>
+          <li>Account profile data stored by PerunForce</li>
+          <li>Nutrition, supplements, workout, habit, and wellness entries</li>
+          <li>Health Connect data copies stored by PerunForce, if any</li>
+          <li>AI consent flags and AI-related app records stored by PerunForce</li>
+          <li>Uploaded profile or progress media stored by PerunForce, if any</li>
+        </ul>
+
+        <div class="notice">
+          PerunForce cannot delete data held directly inside third-party
+          services such as Google Health Connect, Google Account, or Open Food
+          Facts. You can revoke Health Connect access from Android Health
+          Connect settings.
+        </div>
+
+        <h2>Retention</h2>
+        <p>
+          Deletion requests are processed as soon as reasonably possible. Some
+          technical backup or recovery copies may remain for a limited period
+          before deletion cycles complete.
+        </p>
+
+        <h2>Related policy</h2>
+        <p>
+          See the
+          <a href="../">PerunForce Privacy Policy</a>
+          for more information about data collection, use, and sharing.
+        </p>
+
+        <div class="footer">
+          This page is public and does not require signing in.
+        </div>
+      </article>
+    </main>
+  </body>
+</html>
