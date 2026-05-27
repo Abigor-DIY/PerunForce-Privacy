@@ -1,10 +1,10 @@
 # Privacy Policy — PerunForce
 
-**Effective date:** April 13, 2026  
-**Last updated:** April 13, 2026  
+**Effective date:** May 27, 2026  
+**Last updated:** May 27, 2026  
 **App:** PerunForce (`com.perunforce.perun_force`)  
 **Developer:** PerunForce  
-**Contact:** contact@perunforce.app
+**Contact:** abigor82@gmail.com
 
 ## 1. Introduction
 
@@ -88,6 +88,8 @@ If you explicitly expand access, PerunForce may also read optional extended data
 
 PerunForce reads Health Connect data only after you grant permission. PerunForce does not write health data into Health Connect.
 
+Health Connect data is used only for user-facing wellness and fitness features inside the app. It is not sold, used for advertising, or used for cross-app tracking.
+
 ### 2.8 Family profile data
 
 - Family profile name
@@ -125,6 +127,8 @@ For health-related AI flows, PerunForce requests explicit in-app consent before 
 
 AI features are optional. If you do not use them, that AI-related processing does not occur.
 
+AI-generated outputs are informational only and are not medical diagnosis, treatment, or professional medical advice.
+
 ## 5. Health Connect
 
 PerunForce uses Health Connect only after you explicitly grant access.
@@ -152,6 +156,8 @@ When you sign in, PerunForce may store and synchronize data using Supabase for:
 - authentication
 - database synchronization
 - storage of selected media such as profile photos or exports
+
+If you use the app without signing in, your app data remains local except when you explicitly use optional online features such as AI analysis, Open Food Facts lookup, or Health Connect access granted on your device.
 
 ### 6.3 Data transmission
 
@@ -211,14 +217,13 @@ Depending on your jurisdiction, you may have the right to:
 - request deletion of your data
 - withdraw consent for optional processing such as AI features
 
-For requests, contact: `contact@perunforce.app`
+For requests, contact: `abigor82@gmail.com`
 
 ## 13. Privacy Policy Availability
 
-This Privacy Policy must be published on a public, non-geofenced, non-editable URL for Google Play compliance. The same policy should be linked:
+This Privacy Policy is published on a public, non-geofenced URL for Google Play compliance. The same policy should be linked:
 
 - in Google Play Console
-- in the Play Store listing
 - inside the app
 
 ## 14. Changes to This Policy
