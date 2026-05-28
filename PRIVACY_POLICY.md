@@ -34,7 +34,16 @@ Depending on the features you use, PerunForce may collect and process the follow
 - Health goals and related preferences
 - Profile photo
 
-### 2.3 Health and wellness data
+### 2.3 Subscription and purchase entitlement data
+
+- Current PerunForce plan
+- Subscription entitlement status
+- Billing cycle label
+- Purchase source identifier such as Google Play Billing
+
+PerunForce does not collect or store payment card numbers. Payments and billing account management are handled by Google Play.
+
+### 2.4 Health and wellness data
 
 - Health interview answers
 - Self-reported symptoms
@@ -43,7 +52,7 @@ Depending on the features you use, PerunForce may collect and process the follow
 - Lifestyle and wellbeing entries such as sleep quality, energy, stress, caffeine, hydration, alcohol, nicotine, and notes
 - Health support plans and symptom tracking entries
 
-### 2.4 Nutrition data
+### 2.5 Nutrition data
 
 - Meals and nutrition logs
 - Food names, brands, and barcodes
@@ -52,14 +61,14 @@ Depending on the features you use, PerunForce may collect and process the follow
 - Meal notes
 - Optional meal photos submitted for AI analysis
 
-### 2.5 Supplements data
+### 2.6 Supplements data
 
 - Supplement stack data
 - Dosages, schedules, reminders, and overrides
 - Supplement intake logs
 - Supplement trial data, check-ins, ratings, notes, and summaries
 
-### 2.6 Fitness and body data
+### 2.7 Fitness and body data
 
 - Workout history and workout sessions
 - Body weight history
@@ -67,7 +76,7 @@ Depending on the features you use, PerunForce may collect and process the follow
 - Body progress entries
 - Optional progress photos
 
-### 2.7 Health Connect data
+### 2.8 Health Connect data
 
 If you connect Health Connect and grant access, PerunForce may read:
 
@@ -90,7 +99,7 @@ PerunForce reads Health Connect data only after you grant permission. PerunForce
 
 Health Connect data is used only for user-facing wellness and fitness features inside the app. It is not sold, used for advertising, or used for cross-app tracking.
 
-### 2.8 Family profile data
+### 2.9 Family profile data
 
 - Family profile name
 - Relationship label
@@ -173,6 +182,7 @@ These may include:
 
 - **Supabase** for authentication, storage, and synchronization
 - **Google Sign-In** for account authentication
+- **Google Play Billing** for subscription purchases and payment management
 - **Google Gemini** for optional AI processing
 - **Open Food Facts** for food database lookups based on barcode or search
 
