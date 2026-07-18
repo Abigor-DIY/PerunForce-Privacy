@@ -3,7 +3,7 @@
 **Effective date:** May 27, 2026  
 **Last updated:** July 18, 2026
 **App:** PerunForce (`com.perunforce.perun_force`)  
-**Developer:** PerunForce  
+**Developer and publisher:** Rafał Bryndza, operating the PerunForce app
 **Contact:** abigor82@gmail.com
 
 ## 1. Introduction
@@ -60,6 +60,7 @@ PerunForce does not collect or store payment card numbers. Payments and billing 
 - Nutrition goals
 - Meal notes
 - Optional meal photos submitted for AI analysis
+- Optional product packaging, ingredient-list, and nutrition-label photos submitted for AI data extraction
 - Optional meal-description text or voice transcript submitted for AI parsing
 
 ### 2.6 Voice input and microphone access
@@ -115,6 +116,8 @@ PerunForce reads Health Connect data only after you grant permission. PerunForce
 
 Health Connect data is used only for user-facing wellness and fitness features inside the app. It is not sold, used for advertising, or used for cross-app tracking.
 
+By default, Health Connect data is processed and stored locally. If you sign in and separately enable Health Connect cloud history, PerunForce synchronizes processed day-level summaries with your account through Supabase so your history can be available on your other devices. These summaries may include daily activity, sleep, workout, energy, weight, body-composition, and recovery values together with the source platform and synchronization time. PerunForce does not upload raw point-by-point Health Connect records through this cloud bridge. You can keep Health Connect local-only or disable future cloud synchronization at any time. Disabling synchronization stops future transfers but does not automatically delete summaries already synchronized; those summaries are covered by the account and data deletion process described below.
+
 ### 2.10 Family profile data
 
 - Family profile name
@@ -122,6 +125,18 @@ Health Connect data is used only for user-facing wellness and fitness features i
 - Emoji or avatar-style identifier
 - Optional date of birth
 - Optional basic profile metrics when entered by the user
+
+### 2.11 App usage and operational data
+
+PerunForce may process limited operational metadata needed to provide paid features, enforce usage limits, and improve reliability, such as:
+
+- feature identifier and request count
+- request timestamp, completion status, and approximate token usage for AI features
+- subscription plan and entitlement status
+- interactions with optional Plus or Pro prompts
+- technical error information without intentionally attaching meal text, microphone audio, photos, or health notes
+
+Some of this metadata remains local. When you are signed in, limited usage or entitlement events may be stored in Supabase. PerunForce does not use this data for third-party advertising or cross-app tracking.
 
 ## 3. How We Use Data
 

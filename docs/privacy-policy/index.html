@@ -128,6 +128,7 @@
           <div><strong>Effective date:</strong> May 27, 2026</div>
           <div><strong>Last updated:</strong> July 18, 2026</div>
           <div><strong>App:</strong> PerunForce</div>
+          <div><strong>Developer and publisher:</strong> Rafał Bryndza</div>
           <div><strong>Package:</strong> <code>com.perunforce.perun_force</code></div>
           <div><strong>Contact:</strong> <a href="mailto:abigor82@gmail.com">abigor82@gmail.com</a></div>
         </section>
@@ -184,6 +185,7 @@
           <li>Food names, brands, and barcodes</li>
           <li>Calories and macronutrients</li>
           <li>Optional meal photos submitted for AI analysis</li>
+          <li>Optional product packaging, ingredient-list, and nutrition-label photos submitted for AI data extraction</li>
           <li>Optional meal-description text or voice transcript submitted for AI parsing</li>
         </ul>
 
@@ -246,6 +248,21 @@
           features inside the app. It is not sold, used for advertising, or used
           for cross-app tracking.
         </p>
+        <p>
+          By default, Health Connect data is processed and stored locally. If
+          you sign in and separately enable Health Connect cloud history,
+          PerunForce synchronizes processed day-level summaries with your
+          account through Supabase so your history can be available on your
+          other devices. These summaries may include daily activity, sleep,
+          workout, energy, weight, body-composition, and recovery values together
+          with the source platform and synchronization time. PerunForce does not
+          upload raw point-by-point Health Connect records through this cloud
+          bridge. You can keep Health Connect local-only or disable future cloud
+          synchronization at any time. Disabling synchronization stops future
+          transfers but does not automatically delete summaries already
+          synchronized; those summaries are covered by the account and data
+          deletion process described below.
+        </p>
 
         <h3>Family profile data</h3>
         <ul>
@@ -255,6 +272,24 @@
           <li>Optional date of birth</li>
           <li>Optional basic profile metrics when entered by the user</li>
         </ul>
+
+        <h3>App usage and operational data</h3>
+        <p>
+          PerunForce may process limited operational metadata needed to provide
+          paid features, enforce usage limits, and improve reliability, such as:
+        </p>
+        <ul>
+          <li>Feature identifier and request count</li>
+          <li>Request timestamp, completion status, and approximate token usage for AI features</li>
+          <li>Subscription plan and entitlement status</li>
+          <li>Interactions with optional Plus or Pro prompts</li>
+          <li>Technical error information without intentionally attaching meal text, microphone audio, photos, or health notes</li>
+        </ul>
+        <p>
+          Some of this metadata remains local. When you are signed in, limited
+          usage or entitlement events may be stored in Supabase. PerunForce does
+          not use this data for third-party advertising or cross-app tracking.
+        </p>
 
         <h2>3. How We Use Data</h2>
         <ul>
