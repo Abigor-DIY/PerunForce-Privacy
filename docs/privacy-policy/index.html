@@ -126,7 +126,7 @@
 
         <section class="meta">
           <div><strong>Effective date:</strong> May 27, 2026</div>
-          <div><strong>Last updated:</strong> May 27, 2026</div>
+          <div><strong>Last updated:</strong> July 18, 2026</div>
           <div><strong>App:</strong> PerunForce</div>
           <div><strong>Package:</strong> <code>com.perunforce.perun_force</code></div>
           <div><strong>Contact:</strong> <a href="mailto:abigor82@gmail.com">abigor82@gmail.com</a></div>
@@ -184,7 +184,27 @@
           <li>Food names, brands, and barcodes</li>
           <li>Calories and macronutrients</li>
           <li>Optional meal photos submitted for AI analysis</li>
+          <li>Optional meal-description text or voice transcript submitted for AI parsing</li>
         </ul>
+
+        <h3>Voice input and microphone access</h3>
+        <p>
+          Voice meal entry is optional. PerunForce requests microphone access
+          only after you open the voice meal entry feature, review an in-app
+          explanation, and choose to continue.
+        </p>
+        <ul>
+          <li>The microphone is active only while you are using the voice capture control.</li>
+          <li>PerunForce does not listen in the background and does not create or store an audio recording.</li>
+          <li>Audio is processed by the Android speech recognition service available on your device. Depending on the device, language, and Android settings, recognition may occur on the device or be processed by the recognition service provider.</li>
+          <li>PerunForce receives the resulting text transcript and, when available, alternative recognition results. It does not receive a reusable audio file from the Android speech recognition service.</li>
+          <li>After separate confirmation for AI processing, the transcript may be sent through the PerunForce backend to Google Gemini to identify food names, amounts, and portions.</li>
+          <li>You can decline microphone access and enter the meal manually.</li>
+        </ul>
+        <p>
+          The structured meal data you choose to save is handled like other
+          nutrition data described in this policy.
+        </p>
 
         <h3>Supplements data</h3>
         <ul>
@@ -208,6 +228,8 @@
           <li>Sleep sessions</li>
           <li>Workouts / exercise</li>
           <li>Total calories burned</li>
+          <li>Active calories burned</li>
+          <li>Basal metabolic rate</li>
           <li>Distance</li>
           <li>Weight</li>
         </ul>
@@ -249,7 +271,7 @@
           PerunForce includes optional AI features. When you use those features,
           relevant data may be sent to Google Gemini for processing, including
           health interview summaries, supplement analysis, and meal photo
-          analysis.
+          analysis, as well as text or voice-transcript meal parsing.
         </p>
         <p>
           Health-related AI flows require explicit in-app consent before
@@ -287,6 +309,7 @@
           <li>Google Sign-In for account authentication</li>
           <li>Google Play Billing for subscription purchases and payment management</li>
           <li>Google Gemini for optional AI processing</li>
+          <li>Android speech recognition service for optional voice-to-text input; the active provider depends on the user’s device and Android configuration</li>
           <li>Open Food Facts for food database lookups</li>
         </ul>
 
@@ -303,6 +326,12 @@
           Data is retained for as long as needed to provide app features,
           maintain synchronization, comply with legal obligations, resolve
           disputes, and enforce agreements, unless you request deletion.
+        </p>
+        <p>
+          PerunForce does not retain raw microphone audio. Voice transcripts
+          sent for optional AI meal parsing are processed to produce the result;
+          meal entries saved by the user contain structured nutrition data
+          rather than an audio recording.
         </p>
 
         <h2>10. Deletion and User Choices</h2>

@@ -1,7 +1,7 @@
 # Privacy Policy — PerunForce
 
 **Effective date:** May 27, 2026  
-**Last updated:** May 27, 2026  
+**Last updated:** July 18, 2026
 **App:** PerunForce (`com.perunforce.perun_force`)  
 **Developer:** PerunForce  
 **Contact:** abigor82@gmail.com
@@ -60,15 +60,29 @@ PerunForce does not collect or store payment card numbers. Payments and billing 
 - Nutrition goals
 - Meal notes
 - Optional meal photos submitted for AI analysis
+- Optional meal-description text or voice transcript submitted for AI parsing
 
-### 2.6 Supplements data
+### 2.6 Voice input and microphone access
+
+Voice meal entry is optional. PerunForce requests microphone access only after you open the voice meal entry feature, review an in-app explanation, and choose to continue.
+
+- The microphone is active only while you are using the voice capture control.
+- PerunForce does not listen in the background and does not create or store an audio recording.
+- Audio is processed by the Android speech recognition service available on your device. Depending on the device, language, and Android settings, recognition may occur on the device or be processed by the recognition service provider.
+- PerunForce receives the resulting text transcript and, when available, alternative recognition results. It does not receive a reusable audio file from the Android speech recognition service.
+- After separate confirmation for AI processing, the transcript may be sent through the PerunForce backend to Google Gemini to identify food names, amounts, and portions.
+- You can decline microphone access and enter the meal manually.
+
+The structured meal data you choose to save is handled like other nutrition data described in this policy.
+
+### 2.7 Supplements data
 
 - Supplement stack data
 - Dosages, schedules, reminders, and overrides
 - Supplement intake logs
 - Supplement trial data, check-ins, ratings, notes, and summaries
 
-### 2.7 Fitness and body data
+### 2.8 Fitness and body data
 
 - Workout history and workout sessions
 - Body weight history
@@ -76,7 +90,7 @@ PerunForce does not collect or store payment card numbers. Payments and billing 
 - Body progress entries
 - Optional progress photos
 
-### 2.8 Health Connect data
+### 2.9 Health Connect data
 
 If you connect Health Connect and grant access, PerunForce may read:
 
@@ -84,6 +98,8 @@ If you connect Health Connect and grant access, PerunForce may read:
 - Sleep sessions
 - Workouts / exercise
 - Total calories burned
+- Active calories burned
+- Basal metabolic rate
 - Distance
 - Weight
 
@@ -99,7 +115,7 @@ PerunForce reads Health Connect data only after you grant permission. PerunForce
 
 Health Connect data is used only for user-facing wellness and fitness features inside the app. It is not sold, used for advertising, or used for cross-app tracking.
 
-### 2.9 Family profile data
+### 2.10 Family profile data
 
 - Family profile name
 - Relationship label
@@ -131,6 +147,7 @@ Examples include:
 - health interview summaries
 - supplement analysis against your profile
 - meal photo analysis
+- text or voice-transcript meal parsing
 
 For health-related AI flows, PerunForce requests explicit in-app consent before sending relevant health data to the AI service.
 
@@ -184,6 +201,7 @@ These may include:
 - **Google Sign-In** for account authentication
 - **Google Play Billing** for subscription purchases and payment management
 - **Google Gemini** for optional AI processing
+- **Android speech recognition service** for optional voice-to-text input; the active provider depends on the user’s device and Android configuration
 - **Open Food Facts** for food database lookups based on barcode or search
 
 PerunForce does not sell personal data.
@@ -199,6 +217,8 @@ Data may be processed by service providers acting on our behalf when required to
 We retain data for as long as needed to provide the app’s features, maintain synchronization, comply with legal obligations, resolve disputes, and enforce agreements, unless you request deletion.
 
 Some technical backup or recovery copies may remain for a limited time before deletion cycles complete.
+
+PerunForce does not retain raw microphone audio. Voice transcripts sent for optional AI meal parsing are processed to produce the result; meal entries saved by the user contain structured nutrition data rather than an audio recording.
 
 ## 10. Deletion and User Choices
 
